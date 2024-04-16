@@ -1,3 +1,3 @@
-# SQL 
+# PostgreSQL
 
-## PostgreSQL
+## Amelin Course
