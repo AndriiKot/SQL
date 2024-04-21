@@ -1,0 +1,17 @@
+﻿-- 1
+select * from actor;			-- выводить все поля из таблицы "actor".
+
+-- 2
+select actor_id form actor;		 -- выводить поле "actor_id" из таблицы "actor"
+
+-- 3
+select
+         first_name,
+         last_name,
+         actor_id 
+from 
+	actor;                          -- выводить поля "first_name","last_name","actor_id" из таблицы actor_id
+
+
+
+
