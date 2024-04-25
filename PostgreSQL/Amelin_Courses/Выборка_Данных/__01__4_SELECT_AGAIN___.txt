@@ -1,18 +1,18 @@
-﻿select 
+﻿SELECT 
 	first_name,
 	last_name ,
 	actor_id ,
 	actor_id,
 	*
-from 
+FROM 
 	actor a;                          
                 -- выводить повторно поле "actor_id" а затем при помощи оператора "*" выводит
                 -- все поля таблицы даже выводит те поля которые были явно указны в запросе ранеи. 
 
-select 
+SELECT 
     *,
     *
-from
+FROM
     actor a;
                 -- выводит все поля таблицы "actor_id" дважды
 

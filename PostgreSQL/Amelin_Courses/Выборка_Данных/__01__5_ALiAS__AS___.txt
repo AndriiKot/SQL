@@ -1,27 +1,27 @@
 ﻿-- !!! AS !!!
 
-select 
-	first_name   actor_name,            -- создаем псевдоним "actor_name"
-        first_name   Actor_Name,        -- !!!! заглавные буквы будут заменены строчные. !!! "actor_name" !!! будет на выходе  
-	first_name  as actor_name,          -- создаем псевдоним"actor_name"
-        first_name  as Actor_Name,      -- !!!! заглавные буквы будут заменены строчные. !!! "actor_name" !!! будет на выходе
-from
+SELECT 
+	first_name     actor_name,            -- создаем псевдоним "actor_name"
+        first_name     Actor_Name,        -- !!!! заглавные буквы будут заменены строчные. !!! "actor_name" !!! будет на выходе  
+	first_name  AS actor_name,        -- создаем псевдоним"actor_name"
+        first_name  AS Actor_Name,        -- !!!! заглавные буквы будут заменены строчные. !!! "actor_name" !!! будет на выходе
+FROM
   	actor;
 
-select
+SELECT
 	first_name  "actor name",           -- !!! При взятия псевдонима в двойные кавычки можно в именовании 
                                         -- употреблять пробелы и заглавные буквы 
                                         -- а выходе буде псевдоним "actor name"   !!!
-    first_name  "Actor Name"            -- на выходе буде псевдоним "Actor Name"  !!!
-from 
+        first_name  "Actor Name"        -- на выходе буде псевдоним "Actor Name"  !!!
+FROM 
 	actor;
 
-select
-	first_name  as "actor name",        -- !!! При взятия псевдонима в двойные кавычки можно в именовании 
+SELECT
+	first_name  AS "actor name",        -- !!! При взятия псевдонима в двойные кавычки можно в именовании 
                                         -- употреблять пробелы и заглавные буквы 
-                                        -- на выходе буде псевдоним "actor name"  ключевое слово "as" можно употреблять для избежание возможных ошибок
-    first_name  as "Actor Name"         -- на выходе буде псевдоним "Actor Name"  ключевое слово "as" можно употреблять для избежание возможных ошибок
-from 
+                                        -- на выходе буде псевдоним "actor name"  ключевое слово "AS" можно употреблять для избежание возможных ошибок
+        first_name  AS "Actor Name"     -- на выходе буде псевдоним "Actor Name"  ключевое слово "AS" можно употреблять для избежание возможных ошибок
+FROM 
 	actor;
 
     

@@ -1,15 +1,15 @@
 ﻿-- 1
-select * from actor;			-- выводить все поля из таблицы "actor".
+SELECT * FROM actor;			-- выводить все поля из таблицы "actor".
 
 -- 2
-select actor_id form actor;		 -- выводить поле "actor_id" из таблицы "actor"
+SELECT actor_id FROM actor;		 -- выводить поле "actor_id" из таблицы "actor"
 
 -- 3
-select
+SELECT
          first_name,
          last_name,
          actor_id 
-from 
+FROM 
 	actor;                          -- выводить поля "first_name","last_name","actor_id" из таблицы actor_id
 
 

@@ -1,20 +1,33 @@
-﻿  NULL = 'Some string'                  -- ?   [NULL]
-  'Some string' = NULL                  -- ?   [NULL]
-  ''   = 'Some string'                  -- ?   []
-  NULL || 'Some string'                 -- ?   [NULL]
-  'Some string' || NULL                 -- ?   [NULL]
-  ''   || 'Some string'                 -- ?   'Some string'
-  NULL <> 'Some string'                 -- ?   [NULL]
-  NULL = NULL                           -- ?   [NULL]
-  NULL IS NULL                          -- ?   [V]
-  ''   = ''                             -- ?   [v]
-  NULL = ''                             -- ?   [NULL]
-  SELECT 1=1 and NULL = ''              -- ?  [NULL]
-  SELECT 1=1 or NULL = ''               -- ?  [v]
+﻿  NULL = 'Some string'           -- ?   [NULL]            
+  'Some string' = NULL           -- ?   [NULL]
 
-   SELECT 1 in (1, 2, NULL)             -- true [v]
-   SELECT 1 in (2, 3, NULL)             -- NULL [NULL]
-   SELECT NULL in (1, 2, NULL)          -- NULL [NULL]
+  ''   = 'Some string'           -- ?   []
+
+
+  NULL || 'Some string'          -- ?   [NULL]
+  'Some string' || NULL          -- ?   [NULL]
+
+  ''   || 'Some string'          -- ?   'Some string'
+
+
+  NULL <> 'Some string'          -- ?   [NULL]
+
+  NULL = NULL                    -- ?   [NULL]
+
+
+  NULL IS NULL                   -- ?   [V]
+
+  ''   = ''                      -- ?   [v]
+
+  NULL = ''                      -- ?   [NULL]
+
+  SELECT 1=1 and NULL = ''       -- ?   [NULL]
+  SELECT 1=1 or NULL = ''        --     [v]
+
+
+  SELECT 1 in (1, 2, NULL)      -- true [v]
+  SELECT 1 in (2, 3, NULL)      -- NULL [NULL]
+  SELECT NULL in (1, 2, NULL)   -- NULL [NULL]
 
   
 
@@ -33,7 +46,7 @@
 !!!!
  SELECT *
  FROM address a
- where address2 in ('Kiev','',null) --? Null  в данном выражение бессмысленно 
+ WHERE address2 in ('Kiev', '', NULL) --? NULL  в данном выражение бессмысленно 
 !!!
 
 3.
