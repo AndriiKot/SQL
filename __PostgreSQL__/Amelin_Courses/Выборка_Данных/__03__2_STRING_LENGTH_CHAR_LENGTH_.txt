@@ -1,0 +1,28 @@
+﻿------------------------ CHAR_LENGTH -----------------------------
+SELECT CHAR_LENGTH('String 1')  -- 8
+
+-------------- CHAR_LENGTH -----  возвращает длину строки --------
+
+SELECT CHAR_LENGTH('string 1' || ' ' || 'string 2')       -- 17 --
+   
+SELECT 
+    CHAR_LENGTH(first_name || ' ' || last_name)   as "Длинна строки"
+FROM
+	actor a;
+
+
+
+------------------------ LENGTH -------------------------------------
+
+
+SELECT LENGTH('String 1')  -- 8
+
+-------------- LENGTH -----  возвращает длину строки --------
+
+SELECT LENGTH('string 1' || ' ' || 'string 2')       -- 17 --
+   
+SELECT 
+    LENGTH(first_name || ' ' || last_name)   as "Длинна строки"
+FROM
+	actor a;
+
