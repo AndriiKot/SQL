@@ -1,0 +1,4 @@
+﻿SELECT
+	CONCAT('title: ', f.title, '; description: ', f.description)    AS "fullTitle"
+FROM 
+	film f;

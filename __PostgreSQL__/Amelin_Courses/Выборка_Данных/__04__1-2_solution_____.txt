@@ -1,0 +1,9 @@
+﻿SELECT
+	p.payment_id        AS  "№ платежа",
+	p.customer_id       AS  "№ покупателя",
+	p.amount            AS  "Сумма платежа  в долларах",
+	p.amount * 42       AS  "Сумма платежа в гривнах"
+FROM
+	payment p;
+
+

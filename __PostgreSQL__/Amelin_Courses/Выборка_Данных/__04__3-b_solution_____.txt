@@ -1,0 +1,4 @@
+﻿SELECT
+    LTRIM(f.description, 'A ')      AS trimmerDescription
+FROM
+    film f;
