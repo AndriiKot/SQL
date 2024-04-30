@@ -1,0 +1,8 @@
+﻿-- 1. Оператор сравнения в SQL или как задать ограничения в SQL? --
+
+SELECT title, film_id, rating
+FROM film f
+WHERE f.length > 100;
+
+
+-- Оператор WHERE задаёт ограничения на запрос --
